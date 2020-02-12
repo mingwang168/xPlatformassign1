@@ -23,7 +23,7 @@ export default function App() {
   const [head, setHead] = useState(heads[Math.floor((Math.random()*heads.length))]);
   const [body, setBody] = useState(bodys[Math.floor((Math.random()*bodys.length))]);
   const [aFeet, setFeet] = useState(feet[Math.floor((Math.random()*feet.length))]);
-  const [name, setName] = useState('X');
+  const [name, setName] = useState('');
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
