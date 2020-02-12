@@ -23,7 +23,7 @@ export default function App() {
   const [head, setHead] = useState(heads[Math.floor((Math.random()*heads.length))]);
   const [body, setBody] = useState(bodys[Math.floor((Math.random()*bodys.length))]);
   const [aFeet, setFeet] = useState(feet[Math.floor((Math.random()*feet.length))]);
-  const [name, setName] = useState('');
+  const [name, setName] = useState('X');
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -37,14 +37,12 @@ export default function App() {
               var randomHead=heads[Math.floor((Math.random()*heads.length))];
               var randomBody=bodys[Math.floor((Math.random()*bodys.length))];
               var randomFeet=feet[Math.floor((Math.random()*feet.length))];
-              var headOf=randomHead.toString().substr(14,8);
-              var bodyOf=randomBody.toString().substr(14,8);
-              var feetOf=randomFeet.toString().substr(14,8);
-        //      console.log(randomHead)
-        //      console.log(headOf)
-              if(headOf==bodyOf && bodyOf==feetOf && feetOf=='monster1'){setName("Bill");}else
-              if(headOf==bodyOf && bodyOf==feetOf && feetOf=='monster2'){setName("Dave");}else
-              if(headOf==bodyOf && bodyOf==feetOf && feetOf=='monster3'){setName("Greta");}else
+
+            //  console.log(randomHead)
+           //   console.log(headOf)
+              if(randomHead==heads[0] && randomBody==bodys[0] && randomFeet==feet[0]){setName("Bill");}else
+              if(randomHead==heads[1] && randomBody==bodys[1] && randomFeet==feet[1]){setName("Dave");}else
+              if(randomHead==heads[2] && randomBody==bodys[2] && randomFeet==feet[2]){setName("Greta");}else
               {setName('')}
               setHead( randomHead );
               setBody( randomBody );
