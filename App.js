@@ -65,9 +65,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontSize: 20,
+    fontSize: 30,
     textAlign: "center",
-    paddingBottom: 0,
+    paddingBottom: 10,
     color: 'red'
   }
 });

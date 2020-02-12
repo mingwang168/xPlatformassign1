@@ -14,7 +14,7 @@ const Monster = (props) => {
   // 3
   const styles = StyleSheet.create({
     image: {
-      width: 270,
+      width: 400,
       height: 180
     }
   });
